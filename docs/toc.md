@@ -18,7 +18,7 @@
     - [Blank Starter Project]({{urlRoot}}/projects/blank/overview)
 
 ***
-- <h3> Reference</h3>
+- <h3>Reference</h3>
     - [Overview]({{urlRoot}}/content/intro-reference)
     - Concepts and terminology
         - [SpatialOS concepts (SpatialOS site)](https://docs.improbable.io/reference/latest/shared/concepts/spatialos)
