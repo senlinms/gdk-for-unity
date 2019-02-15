@@ -23,8 +23,37 @@
     - Concepts and terminology
         - [SpatialOS concepts (SpatialOS site)](https://docs.improbable.io/reference/latest/shared/concepts/spatialos)
         - [GDK for Unity glossary]({{urlRoot}}/content/glossary)
-    - Workflows
-        - [Monobehaviour or ECS workflow]({{urlRoot}}/content/intro-workflows-spatialos-entities)
+    - Workflows - MonoBehaviour or ECS
+        - [Which workflow]({{urlRoot}}/content/intro-workflows-spatialos-entities)
+        - MonoBehaviour workflow
+            - Create workers
+                - [WorkerConnector]({{urlRoot}}/content/gameobject/creating-workers-with-workerconnector)
+                - [API - WorkerConnector]({{urlRoot}}/content/gameobject/api-workerconnector)
+            - Link to GameObjects
+                - [SpatialOS entities as GameObjects]({{urlRoot}}/content/gameobject/linking-spatialos-entities)
+                - [Workers as GameObjects]({{urlRoot}}/content/gameobject/linking-workers-gameobjects)
+            - MonoBehaviours with SpatialOS
+                - [Interact with SpatialOS using MonoBehaviours]({{urlRoot}}/content/gameobject/interact-spatialos-monobehaviours)
+                - [Readers and writers]({{urlRoot}}/content/gameobject/readers-writers)
+                - [Readers and writers: SpatialOS component data]({{urlRoot}}/content/gameobject/reading-and-writing-component-data)
+                - [Readers and writers: Events]({{urlRoot}}/content/gameobject/sending-receiving-events)
+                - [Commands: SpatialOS component commands]({{urlRoot}}/content/gameobject/sending-receiving-commands)
+                - [Commands: World commands]({{urlRoot}}/content/gameobject/world-commands)
+            - [Create and delete SpatialOS entities]({{urlRoot}}/content/gameobject/create-delete-spatialos-entities)
+            - [API - SpatialOSComponent]({{urlRoot}}/content/gameobject/spatialoscomponent)
+        - ECS workflow
+            - [System update order]({{urlRoot}}/content/ecs/system-update-order)
+            - [ECS entity contract]({{urlRoot}}/content/ecs/entity-contracts)
+            - ECS interaction with SpatialOS
+                - [ECS component updates]({{urlRoot}}/content/ecs/component-updates)
+                - [Send and receive events]({{urlRoot}}/content/ecs/events)
+                - [Commands: SpatialOS component commands]({{urlRoot}}/content/ecs/sending-receiving-component-commands)
+                - [Commands: World commands]({{urlRoot}}/content/ecs/world-commands)
+                - [Reactive components: Receive updates from SpatialOS]({{urlRoot}}/content/ecs/reactive-components)
+                - [Authority]({{urlRoot}}/content/ecs/authority)
+            - [Worker entity]({{urlRoot}}/content/workers/worker-entity)
+            - [Temporary component]({{urlRoot}}/content/ecs/temporary-components)
+            - [Custom replication system]({{urlRoot}}/content/ecs/custom-replication-system)
     - Modules
         - [Core and Feature Module overview]({{urlRoot}}/content/modules/core-and-feature-module-overview)
         - [Transform Synchronization Feature Module]({{urlRoot}}/content/modules/transform-feature-module)
@@ -52,37 +81,6 @@
             - [The code generator]({{urlRoot}}/content/code-generator)
             - [ECS component generation]({{urlRoot}}/content/ecs/component-generation)
         - [Logs]({{urlRoot}}/content/ecs/logging)
-    - MonoBehaviour workflow
-        - [Which workflow?]({{urlRoot}}/content/intro-workflows-spatialos-entities)
-        - Create workers
-            - [WorkerConnector]({{urlRoot}}/content/gameobject/creating-workers-with-workerconnector)
-            - [API - WorkerConnector]({{urlRoot}}/content/gameobject/api-workerconnector)
-        - Link to GameObjects
-            - [SpatialOS entities as GameObjects]({{urlRoot}}/content/gameobject/linking-spatialos-entities)
-            - [Workers as GameObjects]({{urlRoot}}/content/gameobject/linking-workers-gameobjects)
-        - MonoBehaviours with SpatialOS
-            - [Interact with SpatialOS using MonoBehaviours]({{urlRoot}}/content/gameobject/interact-spatialos-monobehaviours)
-            - [Readers and writers]({{urlRoot}}/content/gameobject/readers-writers)
-            - [Readers and writers: SpatialOS component data]({{urlRoot}}/content/gameobject/reading-and-writing-component-data)
-            - [Readers and writers: Events]({{urlRoot}}/content/gameobject/sending-receiving-events)
-            - [Commands: SpatialOS component commands]({{urlRoot}}/content/gameobject/sending-receiving-commands)
-            - [Commands: World commands]({{urlRoot}}/content/gameobject/world-commands)
-        - [Create and delete SpatialOS entities]({{urlRoot}}/content/gameobject/create-delete-spatialos-entities)
-        - [API - SpatialOSComponent]({{urlRoot}}/content/gameobject/spatialoscomponent)
-    - ECS workflow
-        - [Which workflow?]({{urlRoot}}/content/intro-workflows-spatialos-entities)
-        - [System update order]({{urlRoot}}/content/ecs/system-update-order)
-        - [ECS entity contract]({{urlRoot}}/content/ecs/entity-contracts)
-        - ECS interaction with SpatialOS
-            - [ECS component updates]({{urlRoot}}/content/ecs/component-updates)
-            - [Send and receive events]({{urlRoot}}/content/ecs/events)
-            - [Commands: SpatialOS component commands]({{urlRoot}}/content/ecs/sending-receiving-component-commands)
-            - [Commands: World commands]({{urlRoot}}/content/ecs/world-commands)
-            - [Reactive components: Receive updates from SpatialOS]({{urlRoot}}/content/ecs/reactive-components)
-            - [Authority]({{urlRoot}}/content/ecs/authority)
-        - [Worker entity]({{urlRoot}}/content/workers/worker-entity)
-        - [Temporary component]({{urlRoot}}/content/ecs/temporary-components)
-        - [Custom replication system]({{urlRoot}}/content/ecs/custom-replication-system)
     - Mobile support
         - [Overview]({{urlRoot}}/content/mobile/overview)
         - Android support
