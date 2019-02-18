@@ -47,6 +47,7 @@ markStartOfBlock "Editmode Testing"
 pushd "workers/unity"
     dotnet run -p "${PROJECT_DIR}/.shared-ci/tools/RunUnity/RunUnity.csproj" -- \
         -batchmode \
+        -nographics \
         -projectPath "${PROJECT_DIR}/workers/unity" \
         -runTests \
         -testPlatform editmode \
@@ -65,6 +66,7 @@ markStartOfBlock "Playmode Testing"
 pushd "workers/unity"
     dotnet run -p "${PROJECT_DIR}/.shared-ci/tools/RunUnity/RunUnity.csproj" -- \
         -batchmode \
+        -nographics \
         -projectPath "${PROJECT_DIR}/workers/unity" \
         -runTests \
         -testPlatform playmode \
@@ -80,6 +82,7 @@ pushd "test-project"
 markStartOfBlock "Generated Code Testing"
     dotnet run -p "${PROJECT_DIR}/.shared-ci/tools/RunUnity/RunUnity.csproj" -- \
         -batchmode \
+        -nographics \
         -projectPath "${PROJECT_DIR}/test-project" \
         -runTests \
         -testPlatform editmode \
@@ -115,7 +118,7 @@ cleanUnity "$(pwd)/test-project"
 if [ $EDITMODE_TEST_RESULT -ne 0 ] || \
    [ $PLAYMODE_TEST_RESULT -ne 0 ] || \
    [ $CODE_GENERATOR_TEST_RESULT -ne 0 ] || \
-   [ $TEST_PROJECT_EDITMODE_TEST_RESULT -ne 0 ] 
+   [ $TEST_PROJECT_EDITMODE_TEST_RESULT -ne 0 ]
 then
     >&2 echo "Tests failed! See above for more information."
     exit 1
