@@ -12,4 +12,4 @@ if [ -d "${SHARED_CI_DIR}" ]; then
     rm -rf "${SHARED_CI_DIR}"
 fi
 
-git clone "${CLONE_URL}" "${SHARED_CI_DIR}"
+git clone "${CLONE_URL}" "${SHARED_CI_DIR}" --branch feature/upgrade-to-2018.3.5
