@@ -34,17 +34,18 @@
                 - [Workers as GameObjects]({{urlRoot}}/content/gameobject/linking-workers-gameobjects)
             - MonoBehaviours with SpatialOS
                 - [Interact with SpatialOS using MonoBehaviours]({{urlRoot}}/content/gameobject/interact-spatialos-monobehaviours)
+                - [Create and delete SpatialOS entities]({{urlRoot}}/content/gameobject/create-delete-spatialos-entities)
                 - [Readers and writers]({{urlRoot}}/content/gameobject/readers-writers)
                 - [Readers and writers: SpatialOS component data]({{urlRoot}}/content/gameobject/reading-and-writing-component-data)
                 - [Readers and writers: Events]({{urlRoot}}/content/gameobject/sending-receiving-events)
                 - [Commands: SpatialOS component commands]({{urlRoot}}/content/gameobject/sending-receiving-commands)
                 - [Commands: World commands]({{urlRoot}}/content/gameobject/world-commands)
-            - [Create and delete SpatialOS entities]({{urlRoot}}/content/gameobject/create-delete-spatialos-entities)
             - [API - SpatialOSComponent]({{urlRoot}}/content/gameobject/spatialoscomponent)
         - ECS workflow
             - [System update order]({{urlRoot}}/content/ecs/system-update-order)
             - [ECS entity contract]({{urlRoot}}/content/ecs/entity-contracts)
             - ECS interaction with SpatialOS
+                - [Create and delete SpatialOS entities]({{urlRoot}}/content/gameobject/create-delete-spatialos-entities)
                 - [ECS component updates]({{urlRoot}}/content/ecs/component-updates)
                 - [Send and receive events]({{urlRoot}}/content/ecs/events)
                 - [Commands: SpatialOS component commands]({{urlRoot}}/content/ecs/sending-receiving-component-commands)
