@@ -47,7 +47,6 @@ markStartOfBlock "Editmode Testing"
 pushd "workers/unity"
     dotnet run -p "${PROJECT_DIR}/.shared-ci/tools/RunUnity/RunUnity.csproj" -- \
         -batchmode \
-        -nographics \
         -projectPath "${PROJECT_DIR}/workers/unity" \
         -runTests \
         -testPlatform editmode \
@@ -66,7 +65,6 @@ markStartOfBlock "Playmode Testing"
 pushd "workers/unity"
     dotnet run -p "${PROJECT_DIR}/.shared-ci/tools/RunUnity/RunUnity.csproj" -- \
         -batchmode \
-        -nographics \
         -projectPath "${PROJECT_DIR}/workers/unity" \
         -runTests \
         -testPlatform playmode \
@@ -82,7 +80,6 @@ pushd "test-project"
 markStartOfBlock "Generated Code Testing"
     dotnet run -p "${PROJECT_DIR}/.shared-ci/tools/RunUnity/RunUnity.csproj" -- \
         -batchmode \
-        -nographics \
         -projectPath "${PROJECT_DIR}/test-project" \
         -runTests \
         -testPlatform editmode \
